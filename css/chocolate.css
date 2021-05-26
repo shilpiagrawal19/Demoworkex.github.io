@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+/*{
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}*/
+/*body{
+  background: #f2f2f2;
+}*/
+nav{
+  background:#fffdfd;
+}
+nav:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+nav .logo{
+  float: left;
+  color: #151212;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 70px;
+  padding-left: 60px;
+}
+nav ul{
+  float: right;
+  margin-right: 40px;
+  list-style: none;
+  position: relative;
+}
+nav ul li{
+  float: left;
+  display: inline-block;
+  background: #fffdfd;
+  margin: 0 5px;
+}
+nav ul li a{
+  color:#151212;
+  line-height: 70px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 15px;
+}
+nav ul li a:hover{
+  color: #7277d5;
+  border-radius: 5px;
+  box-shadow:  0 0 5px #33ffff,
+               0 0 10px #66ffff;
+}
+nav ul ul li a:hover{
+  box-shadow: none;
+}
+nav ul ul{
+  position: absolute;
+  top: 90px;
+  border-top: 3px solid #7277d5;
+  opacity: 0;
+  visibility: hidden;
+  transition: top .3s;
+}
+nav ul ul ul{
+  border-top: none;
+}
+nav ul li:hover > ul{
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+nav ul ul li{
+  position: relative;
+  margin: 0px;
+  width: 250px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  z-index: 1;
+}
+nav ul ul li a{
+  line-height: 50px;
+}
+nav ul ul ul li{
+  position: relative;
+  top: -60px;
+  left: 250px;
+}
+.show,.icon, nav input{
+  display: none;
+}
+.fa-plus{
+  font-size: 15px;
+  margin-left: 40px;
+}
+@media all and (max-width: 968px) {
+  nav ul{
+    margin-right: 0px;
+    float: left;
+  }
+  nav .logo{
+    padding-left: 30px;
+    width: 100%;
+  }
+  .show + a, ul{
+    display: none;
+  }
+  nav ul li,nav ul ul li{
+    display: block;
+    width: 100%;
+  }
+  nav ul li a:hover{
+    box-shadow: none;
+  }
+  .show{
+    display: block;
+    color: white;
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+  }
+  .show:hover{
+    color: #7277d5;
+  }
+  .icon{
+    display: block;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  nav ul ul{
+    top: 70px;
+    border-top: 0px;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  nav ul ul a{
+    padding-left: 40px;
+  }
+  nav ul ul ul a{
+    padding-left: 80px;
+  }
+  nav ul ul ul li{
+    position: static;
+  }
+  [id^=btnn]:checked + ul{
+    display: block;
+  }
+  nav ul ul li{
+    border-bottom: 0px;
+  }
+  span.cancel:before{
+    content: '\f00d';
+  }
+}
+/*.content{
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}*/
+/*header{
+  font-size: 35px;
+  font-weight: 600;
+  padding: 10px 0;
+}*/
+/*p{
+  font-size: 30px;
+  font-weight: 500;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+	margin:0;
+	padding:0;
+}
+#Choco_overlay{
+	background: #146eb4 !important;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+	display:none;
+	padding:0;
+	margin:0;
+}
+#Choco_content{
+	display:none;
+	width:800px;
+	height:600px;
+	z-index:1001;
+	position:fixed;
+	left:50%;
+	top:50%;
+	margin-left:-400px;
+	margin-top:-300px;
+	border-top:1px solid transparent;/*Yes, adjust image perfectly at the center of a box, don't know why.*/
+}
+#Choco_left_arrow{
+	float:left;
+	background-image:url(../images/left.png)!important;
+	background-position:12%;
+	left:-20%;
+}
+#Choco_right_arrow{
+	float:right;
+	background-image:url(../images/right.png)!important;
+	background-position:88%;
+	left:20%;
+}
+.Choco_arrows{
+	background-repeat:no-repeat;
+	display:none;
+	position:relative;
+	cursor:pointer;
+	width:49%;
+	top:-100%;
+	height:100%;
+	margin-top:-30px;
+}
+#Choco_container_photo{
+	text-align:center;
+	width:800px;
+	height:600px;
+	/*background:url(../images/ajax-loader.gif) center center no-repeat;*/
+}
+#Choco_container_description{
+	padding:0;
+	height:26px;
+	width:100%;
+	color:#FFFFFF;
+	font-family:Tahoma;
+	clear:both;
+	position:relative;
+	font-size:12px;
+	margin-top:-5px;
+	overflow:hidden;
+	visibility:hidden;
+}
+#Choco_container_title{
+	float:left;
+	padding:5px;
+}
+#Choco_container_via{
+	padding:5px;
+	float:right;
+}
+#Choco_container_via a{
+	color:gray;
+}
+#Choco_container_via a:hover{
+	color:white;
+	background:gray;
+}
+#Choco_close{
+	width:30px;
+	height:25px;
+	background-image:url(../images/close.png)!important;
+	background-repeat:no-repeat;
+	z-index:1002;
+	cursor:pointer;
+	margin: 0px 0px 15px 0px;
+	display:none;
+}
+#Choco_loading{
+	width:9px;
+	height:11px;
+	background-image:url(../images/loading.gif);
+	background-repeat:no-repeat;
+	z-index:1002;
+	cursor:pointer;
+	float:right;
+	margin-top:-20px;
+	display:none;
+}
+#Choco_bigImage{
+	display:none;
+	position:relative;
+	width:100%;
+	height:100%;
+	margin-top:-5px;
+}
+.row{
+
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: 0px;
+      margin-left: 80px;
+}
+
+
+	.bold
+	{
+     background-color: rgb(37, 37, 37);
+     color: rgb(255, 255, 255);
+     box-shadow: rgba(94, 94, 94, 0.35) 0px 13px 18px;
+     width: 18em;
+     float: left;
+    font-size: 0.66em;
+    text-transform: uppercase;
+    font-family: Roboto-medium;
+    letter-spacing: 0.3em;
+    transform-origin: left center;
+    white-space: nowrap;
+    padding: 0.62em 1.5em 0.52em;
+    overflow: hidden;
+    transition: all 1.3s ease 0.7s;
+
+	}
+
+
+    .box1
+    {  
+    	position:relative;
+      margin: 70px -55px -28px 57px;
+    	height:175px;
+    	width: 300px;
+    	background: #fff;
+      transition: 0.7s;
+      border-radius: 7px;
+
+    }
+     .box2
+    {  
+    	position:relative;
+        margin: 70px 15px -28px 73px;
+    	height:215px;
+    	width: 314px;
+    	background: #1d1919;
+
+/*     	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+*/    }
+    .srv
+     {
+     	margin-top: 11px;
+     	margin-bottom: 12px;
+     	padding-left: 15px;
+     	font-size: 16px;
+        color: #5b6883;
+        transition: 0.7s;
+        font-weight: 400;
+     }
+      .img1
+    {
+      margin-left: 18px;
+    	height: 60px;
+    	width: 60px;
+    }
+
+
+
+    .field2
+ {
+    font-size: 28px;
+    color: #98a4bc;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 200px;
+    padding-left: 20px;
+    font-weight: normal;
+    opacity: .7;
+}
+ 
+
+ .rect1
+{
+  z-index: -1;
+background-size: cover;
+height: 375px;
+margin: 110px 0 0 55px;
+padding: 90px 0px 15px -50px;
+background-repeat: no-repeat;
+width: 375px;
+position: absolute;
+left: 0;
+}
+
+.imgr
+{
+  margin-left: 50px;
+  height: 359px;
+  width: 359px;
+}
+
+
+ .rect2
+{
+
+z-index: -2;
+background-size: cover;
+height: 345px;
+width: 345px;
+margin: 170px 0 0 280px;
+padding: 90px 0px 15px -50px;
+background-repeat: no-repeat;
+position: absolute;
+left: 0;
+}
+
+.num
+  {
+
+margin: -300px 0 0 153px;
+color: #98a4bc;
+font-family: 'Poppins', sans-serif;
+font-weight: bold;
+font-size: 50px;
+opacity: .5;
+line-height: 1.2;
+
+  }
+
+  .rectm
+    {
+      margin: 4px -25px 19px 155px;
+      color: #5b6883;
+      font-family: 'Poppins', sans-serif;
+      font-size:16px;
+      font-weight: 380px;
+      line-height: 1.2;
+    }
+.rectp
+    
+    {
+      font-size: 13px;
+      margin: -12px -25px 25px 155px;
+      color: #98a4bc;
+
+    }
+   
+
+.rect3
+{
+
+background-size: cover;
+height: 345px;
+width: 345px;
+margin: 45px 0 0 510px;
+padding: 80px 0px 15px -50px;
+background-repeat: no-repeat;
+position: absolute;
+left: 0;
+}
+
+.rect4
+{
+
+background-size: cover;
+height: 345px;
+width: 345px;
+margin: 140px 0 0 768px;
+padding: 90px 0px 15px -50px;
+background-repeat: no-repeat;
+position: absolute;
+left: 0;
+}
+
+
+
+

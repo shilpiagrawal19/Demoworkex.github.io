@@ -1,0 +1,759 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Website design,App development & Digital Marketing Company</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Planet Hosting Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+<link href='//fonts.googleapis.com/css?family=Voltaire' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<script src="js/modernizr.custom.97074.js"></script>
+<script src="js/jquery.chocolat.js"></script>
+<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/animate.css">
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+        $("#botton").click(function(){
+        var name = $('#name');
+        password.removeClass("invalidcss");
+        var email = $('#email');
+        email.removeClass("invalidcss");
+        var message=$('message');
+        message.removeClass("invalidcss");
+        jQuery('.error').hide();
+        var regExpression1= /\b[a-zA-Z0-9\u00C0-\u017F._%+-]+@[a-zA-Z0-9\u00C0-\u017F.-]+\.[a-zA-Z]{2,}\b/;
+        var regExpression2=/^([a-zA-Z0-9]+)$/;
+        var regExpression3=/^([a-zA-Z]+)$/;
+
+        var isValid =  regExpression1.test(email.val());
+        var isValid1 = regExpression2.test(message.val());
+        var isValid2 = regExpression3.test(name.val());
+
+        if (!isValid2) {
+        	name.addClass("invalidcss")
+        	jQuery('.error.name').show();
+        }
+         if (!isValid)
+          {
+            email.addClass("invalidcss");
+            jQuery('.error.email').show();
+          }
+          if(!isValid1)
+          {
+            message.addClass("invalidcss");
+            jQuery('.error.message').show();
+            return false;
+          }
+      });
+    });
+</script>
+
+<script type="text/javascript">
+	$(function() {
+	$('.team a').Chocolat();
+	});
+</script>	
+<script type="text/javascript" src="js/jquery.hoverdir.js"></script>	
+						<script type="text/javascript">
+							$(function() {
+							
+								$(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+
+							});
+						</script>		
+
+	
+</head>
+<body>
+			
+		 <nav>
+      <div class="logo">WEB DOCTOR</div>
+      <label for="btnn" class="icon">
+        <span class="fa fa-bars"></span>
+      </label>
+      <input type="checkbox" id="btnn">
+      <ul>
+<li><a href="#">HOME</a></li>
+<li>
+<!--           <label for="btnn-1" class="show">ABOUT US +</label>
+ -->          <a href="#">ABOUT US</a>
+          <input type="checkbox" id="btnn-1">
+          <ul>
+<li><a href="about.html">ABOUT</a></li>
+<li><a href="#">BRAND</a></li>
+<li><a href="#">GALLERY</a></li>
+</ul>
+</li>
+        <li>
+<!--           <label for="btnn-2" class="show">SERVICES+</label>
+ -->          <a href="#">SERVICES</a>
+          <input type="checkbox" id="btnn-2">
+          <ul>
+              <li>
+<!--                 <label for="btnn-6" class="show">APP +</label>
+ -->                <a href="#">APP DEVELOPMENT <span class="fa fa-plus"></span></a>
+                <input type="checkbox" id="btnn-6">
+                <ul>
+                     <li style="width: 280px;"><a href="#">Mobile App Development</a></li>
+                      <li style="width: 280px;"><a href="#">Android App Development</a></li>
+                      <li style="width: 280px;"><a href="#">iOS App Development</a></li>
+                        <li style="width: 280px;"><a href="#">Windows App Development</a></li>
+                      <li style="width: 280px;"><a href="#">Fantasy Sports App &ensp;  Development</a></li>
+                  
+                </ul>
+
+              </li>
+
+              <li>
+<!--               <label for="btnn-7" class="show">APP +</label>
+ -->              <a href="#">WEB DEVELOPMENT <span class="fa fa-plus"></span> </a>
+              <input type="checkbox" id="btnn-7">
+                        <ul>
+                            <li><a >Website Development</a></li>
+                            <li><a >Sports Betting Website</a></li>
+                            <li><a >Chatbot Development</a></li>
+                            <li><a >E-commerce</a></li>
+                            <li><a >Crypto Currency</a></li>
+                            <li><a >News Portal</a></li>
+                        </ul>
+
+            </li>
+
+
+              <li><a href="#">GRAPHIC DESIGNING </a></li>
+              <li><a href="#">CONTENT WRITING</a></li>
+
+              <li>
+<!--               <label for="btnn-7" class="show">APP +</label>
+ -->              <a href="#">DIGITAL MARKETING <span class="fa fa-plus"></span></a>
+              <input type="checkbox" id="btnn-7">
+                         <ul>
+                            <li><a >Digital Marketing</a></li>
+                            <li><a >PPC Services </a></li>
+                            <li><a >SEO Services</a></li>
+                            <li><a >E-mail Marketing</a></li>
+                            <li><a >Media Planning</a></li>
+                        </ul>
+
+              </li>
+              <li><a href="#">TRAINING</a></li>
+
+               
+          </ul>
+         </li>
+
+      <li>
+<!--           <label for="btnn-4" class="show">PRODUCTS+</label>
+ -->          <a href="#">PRODUCTS</a>
+          <input type="checkbox" id="btnn-4">
+          <ul>
+                    <li><a >Hospital Management</a></li>
+                    <li><a >College Management</a></li>
+                    <li><a >School Management</a></li>
+                    <li><a >Logistics Management</a></li>
+                    <li><a >Accounting Software</a></li>
+                    <li><a >Food Delivery & Ordering</a></li>
+          </ul>
+        </li>
+
+
+
+<li><a href="#">BLOG</a></li>
+
+<li>
+<!--           <label for="btnn-5" class="show">CONTACT+</label>
+ -->          <a href="#">CONTACT US</a>
+          <input type="checkbox" id="btnn-5">
+          <ul>
+ <li style="width: 185PX;"><a href="#">CONTACT</a></li>
+<li style="width: 185PX;"><a href="#">LOCATION</a></li>
+<li style="width: 185PX;"><a href="#">FAQ </a></li>
+<li style="width: 185PX;"><a href="#">DISCLAMIR</a></li>
+<li style="width: 185PX;"><a href="#">SITE MAP</a></li>
+<li style="width: 185PX;"><a href="#">FEED</a></li>
+
+
+          </ul>
+
+</li>
+
+</ul>
+</nav>
+  
+<script>
+      $('.icon').click(function(){
+        $('span').toggleClass("cancel");
+      });
+    </script>
+				
+
+		<div class="banner">
+			<div class="container">
+				<div class="banner-grids">
+					<div class="col-md-6 banner-grid">
+						<img src="images/srceen.png" class="img-responsive" alt=""/>
+					</div>
+					<div class="col-md-6 banner-grid">
+						<div class="bold" style="padding-bottom: 0px;">Something Awesome</div><br>
+						<h3>Let's go Web</h3>
+						<p>Build your website and mobile apps with crazy webOdoctors</p>
+						<a href="#" class="button">Get a free quote </a>
+					</div>
+					
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+		
+
+<div class="row">
+ <div class="box1">
+    <img class="img1" src="images/img2.png">
+    <h5 class="srv">Website Design & Development</h5>
+ </div>
+
+ <div class="box1" >
+    <img class="img1" src="images/img3.png">
+    <h5 class="srv">Mobile App Development</h5>
+ </div>
+
+<div class="box1" >
+    <img class="img1" src="images/img4.png">
+    <h5 class="srv">Digital Marketing & SEO</h5>
+ </div>
+
+ <div class="box1" >
+    <img class="img1" src="images/img1.png">
+    <h5 class="srv">Media Planning & Buying</h5>
+ </div>
+	<!---banner--->
+	<!---brilliantly --->
+			<div class="content">
+				<div class="brilliant-section">
+					<div class="container">
+						<h3 ><b style="margin-left: 112px;"> WE ARE INDIA’S ONE OF THE BEST WEB AND MOBILE APP DEVELOPERS FOR</b></h3>
+<!-- 						<h5>We get the job done, no matter the project</h5>
+ -->						<div class="brilliant-grids">
+							<div class="col-md-4 brilliant-grid">
+								<div class="brilliant-left">
+								<i class="glyphicon glyphicon-cog" aria-hidden="true"></i>
+								</div>
+								<div class="brilliant-right">
+									<h4>Startup</h4>
+									<p>With our Agile and DevOps practises we deliver products within 12-16 weeks with hard-pressed deadlines and high quality standard.</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="brilliant-grids">
+							<div class="col-md-4 brilliant-grid">
+								<div class="brilliant-left">
+								<i class="glyphicon glyphicon-globe" aria-hidden="true"></i>
+								</div>
+								<div class="brilliant-right">
+									<h4>ENTERPRISES</h4>
+									<p>We build and optimize digital platforms with high end experiences for better custom engagement . We create this magic with our expert solutions.</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="col-md-4 brilliant-grid">
+								<div class="brilliant-left">
+								<i class="glyphicon glyphicon-signal" aria-hidden="true"></i>
+								</div>
+								<div class="brilliant-right">
+									<h4>AGENCIES</h4>
+									<p>We act as a guiding force for your business upstreaming your performance with our high degree technical expertise and strategy.</p>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div><br>
+			
+			<div><a href="#" class="button" style="margin-left: 450px;width: 23%;">Get a free Consultant </a> </div>
+
+		
+
+		 <div class="team">
+			<h2 style="padding: 80px 0 0 30px;">Look How We Work</h2><br>
+<h5 style="padding-left:80px; ">We calculate and evolve with interactive ideas focused on web and mobile apps development.<br> We are keen at offering amazing IT Solutions and long term support.<br> We develop all kinds of products users love</h5>
+
+			 <div class="row" style="margin-top: 110px;">
+ <h3 class="field2" >How we<br> do it?</h3>
+ <img src="images/rect1.png" class="rect1">
+
+<div class="rect2">
+ <img class="imgr" src="images/rect2.png">
+<h2 class="num">1</h2>
+<p class="rectm">DESIGN</p>
+<p class="rectp">BRAND DEVELOPMENT,<br> UI/UX DESIGN, <br>MOBILE APPS,<br> WEBDESIGN</p>
+</div>
+
+
+<div class="rect3">
+ <img class="imgr" src="images/rect2.png">
+<h2 class="num">2</h2>
+<p class="rectm">TECHNOLOGIES</p>
+<p class="rectp">FRONTEND/BACKEND DEVELOPMENT,<br> RESPONSIVE WEBDESIGN,<br> BROWSER.</p>
+</div>
+
+
+<div class="rect4">
+ <img class="imgr" src="images/rect2.png">
+<h2 class="num">3</h2>
+<p class="rectm">FINAL PRODUCT</p>
+<p class="rectp">LONG-TERM TECHNICAL <br>SUPPORT AND ADMINISTRATION</p>
+</div>
+</div>
+</div>
+				
+					<div class="price-section">
+						<div class="container" style="margin-top: 300PX; padding-left: 200PX;">
+							<h3 style="margin-right: 65px;">AFFILIATION WITH</h3>
+							<h5 style="margin-right: 87px;">Our methodologies define this ever changing industries. We love taking up the most complicated work and resolve them with our unique strategies.</h5>
+							<div class="row2">
+								<a class="fi">							
+										<div class="goog">September 2016</div>
+										<img src="images/google.jpg"/>
+								</a>
+							</div>
+							<div class="row2">
+								<a class="fi">							
+										<div class="goog">May 2019</div>
+										<img src="images/crisp.jpg"/>
+								</a>
+							</div>
+
+							<div class="row2">
+								<a class="fi">							
+										<div class="goog">june 2019</div>
+										<img src="images/facebook.jpg"/>
+								</a>
+							</div>
+						</div>
+					</div>	
+
+
+
+
+		   			<div class="row3">
+		   				
+					<div class="box2">
+						<img class="img5" src="images/mem1.jpg" >
+						<h4 class="rv">&ensp;LORY  &emsp;	Content Specialist</h4>
+						<p class="vrc"><br>WE BELIVE IN SPUNK of people through which we build up an innovative brand. Our outcomes beat the competitive environment for all those who desire to move ahead with technology.</p>
+					</div>
+			
+					<div class="box3">
+						<img  class="img5" src="images/mem2.jpg" >
+						<h4 class="rv">&ensp;GAJENDRA  &emsp;Designing Specialist</h4>
+						<p class="vrc"><br>WE SEPARATE DESIGN FROM ART and give the users the new superpowers with the new becoming the benchmark for all.</p>
+					</div>
+					<div>
+					<h4 class="BOLD1">TO HIT GOALS</h4>
+ 					<h3 class="what" style="width: 200px;">Our Specialist</h3>
+					</div>
+					<div class="box2">
+  						<img class="img5" src="images/mem3.jpg" >
+						<h4 class="rv">&ensp;PRATEEK   &emsp;Marketing Specialist</h4>
+						<p class="vrc"><br> WE AIM TO HIT THE BULLS’ EYE that grab peoples’ attention. We focus on every single detail that gives the mass an opportunity to recognise our work.</p>
+					</div>
+			
+					<div class="box3">
+						<img class="img5" src="images/mem4.jpg" >
+						<h4 class="rv">&ensp;PARITOSH &emsp; Programming Specialist</h4>
+						<p class="vrc"><br>WE START OFF ON THE RIGHT FOOT with intuitive designs and mind triggering codes to make your website look “WOW”.</p>
+					</div>
+				
+					<div class="box4">
+						<img class="img5" src="images/mem5.jpg" >
+						<h4 class="rv">&ensp;KIRAN    &emsp; Web Developer</h4>
+ 						<p class="vrc"><br> WE ARE A TEAM OF THE BEST BRAINS Our strength is our commitment to deliver the best.</p>
+					</div>
+				</div>
+		
+
+
+<div id="fight">
+<article>
+	<div>
+<h4 class="BOLD2">Together</h4>
+<h3 class="wwf">We will fight</h3>
+</div>
+<p class="ww">For a better experience of your <br>online presence</p>
+
+<h3 class="serv">Web and Mobile App Development</h3>
+<p class="dis">full-scale integration and subsequent execution along with administration<br>of online projects with global potential</p><br>
+
+<h3 class="serv">Marketing Campaign Execution</h3>
+<p class="dis">strategizing of ad campaigns<br>for domestic and foreign markets</p><br>
+
+<h3 class="serv">Brand Attention</h3>
+<p class="dis">meticulously developing brands<br>of prestigious companies </p><br>
+
+</article>
+
+
+</div>
+<div class="ofc">
+	<div class="imgg">
+		<img src="images/webdoctor.jpg" style="width: 1035px;">		
+	</div>
+	<!-- <div> 
+		<h3 class="office">&ensp; &ensp;What we do <br> the breakdown</h3>
+	</div> -->
+</div>
+
+
+<section class="trends">
+	
+	<div >
+		<h3 class="tt">READ THE LATEST TECH TRENDS</h3>	
+
+	<div class="row4">
+		<div class="box5">
+			<img class="ti" src="images/thumbnail1.png">
+			<h6 class="th">CHAT BOT APP DEVELOPMENT KEY FEATURES AND BENEFITS</h6>
+			<p class="tp">If you are an entrepreneur, take a look at some of the insights of chatbot development. webOdoctor has designed highly functional chatbots for enterprises…</p>\
+			<a href="#" class="ta"> Read more</a>
+			
+		</div>
+
+		<div class="box6">
+			<img class="ti" src="images/thumbnail2.jpeg">
+			<h6 class="th">HOW TO DEVELOP FANTASY SPORTS APP LIKE DREAM 11?</h6>
+			<p class="tp">Fantasy app like Dream11 is on the phenomenal success in the sports industry. The crazy Fantasy Sports App development in India has garnered millions…</p>\
+			<a href="#" class="ta"> Read more</a>
+			
+		</div>
+
+		<div class="box7">
+			<img class="ti" src="images/thumbnail3.jpeg">
+			<h6 class="th">5 BEST MOBILE APP DEVELOPMENT IDEAS YOU SHOULD INVEST IN 2020</h6>
+			<p class="tp" style="padding-bottom: 80px;">Over the past decade, the mobile app development services in India has made our life so easy with a proper solution to every business we think. If you…</p>
+			<a href="#" class="ta"> Read more</a>
+			
+		</div>
+
+	</div>
+</div>
+</section>
+
+<section class="contactt">
+            
+        <div class="contacthead">
+            <img class="conimg" src="images/cup.jpg" alt="Contact Image"/>
+            <h6 class="conh" >Let's catch up over a coffee</h6>   
+        </div>
+      
+
+<form method="post" action="#">
+      <div id ="contactt-box">
+<!--       			<h4 >Username</h4><br>
+ -->          <input id="username" type="text" name="username" placeholder="Name"/>
+                    <label class="error username">invalid name</label>
+<!-- 			<h4>Email</h4><br>
+ -->          <input id="email" type="text" name="Email" placeholder="Email"/>
+          <label class="error email">invalid email</label>
+<!-- 			<h4>message</h4><br>
+ -->      	  <input id="message" type="text" name="message" placeholder="message">
+      	            <label class="error message">invalid message</label>
+
+        
+          <button id="btnnn1" type="submit" name="Signup-button" value="Sign up"/>SUBMIT</button><br>
+        </div>
+    </form>
+</section>
+
+<section id="google-map" style="min-height: 200px;width: 1199px;">
+	<div id="map"></div>
+</section>	
+
+
+ <section class="touch">
+ 	<div>
+ 	<h6 class="gt">GET IN TOUCH</h6><br>
+ 	<div><a href="#" class="mail" style="padding-left: 200px;font-size: 24px;"><b>INFO@WEBODOCTOR.COM</b></a></div>
+
+
+ 	<div class="infobox1">
+
+ 		<div class="infoo">
+ 			<div class="b1">phone number</div>
+ 		        <span itemprop="telephone"><a href="tel:+917000926009" class="contact-link">+91 7000926009</a></span>
+                <span itemprop="telephone"><a href="tel:+919755574880" class="contact-link">+91 9755574880</a></span>
+                <span itemprop="telephone"><a href="tel:+919424476141" class="contact-link">+91 9424476141</a></span>
+                <span itemprop="telephone"><a href="tel:+918269103662" class="contact-link">+91 8269103662</a></span> <br>
+ 		</div>
+
+
+
+
+ 		<div class="infoo">
+ 			<div class="b2">Sales Office </div>
+ 				<br> <span itemprop="addressLocality">14203 SE 4 St Apt A Bellevue (WA, USA), 98007</span>
+ 		</div>
+
+	 </div>
+
+
+	  <div class="infobox2">
+            <div class="infoo">
+                <div class="b3">Headquater</div>
+                <span itemprop="addressLocality">E-3/114, 2nd Floor, B1, 10 Number, Arera Colony, 10 No. Stop, E-3, Arera Colony, Bhopal, Madhya Pradesh 462016</span>
+            </div>
+
+            <div class="infoo">
+                <div class="b4">Main Office</div>
+                <span itemprop="addressLocality">UNO - O , Flat - 401, Lakeshore Green , Palava, Domivali , Navi Mumbai , Maharashtra Pin code- 421204</span>
+            </div>
+      </div>
+
+  </div>
+</section>
+
+						<div class="copy-section">
+							<p>&copy; 2016 Planet Hosting. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+						</div>
+					</div>
+				</div>
+
+				<script>
+        var map_zoom = 6.3;
+    window.onload = function(){
+    	var script = document.createElement('script');
+    	script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBQKbhXL5Kv_SLL73H6_u5RNB3o_1Prvuc&callback=initMap';
+    	setTimeout(() => {
+    	    document.getElementsByTagName('head')[0].appendChild(script);
+    	},1080);
+    }
+    function initMap() {
+        var styledMapType = new google.maps.StyledMapType(
+        [
+            { 
+                "elementType":"geometry",
+                "stylers":[ 
+                    { 
+                        "color":"#f5f5f5"
+                    }
+                ]
+            },
+            { 
+                "elementType":"labels.icon",
+                "stylers":[ 
+                    { 
+                        "visibility":"off"
+                    }
+                ]
+            },
+            { 
+                "elementType":"labels.text.fill",
+                "stylers":[ 
+                    { 
+                        "color":"#616161"
+                    }
+                ]
+            },
+            { 
+                "elementType":"labels.text.stroke",
+                "stylers":[ 
+                    { 
+                        "color":"#f5f5f5"
+                    }
+                ]
+            },
+            { 
+                "featureType":"administrative.land_parcel",
+                "elementType":"labels.text.fill",
+                "stylers":[ 
+                    { 
+                        "color":"#bdbdbd"
+                    }
+                ]
+            },
+            { 
+                "featureType":"poi",
+                "elementType":"geometry",
+                "stylers":[ 
+                    { 
+                        "color":"#eeeeee"
+                    }
+                ]
+            },
+            { 
+                "featureType":"poi",
+                "elementType":"labels.text.fill",
+                "stylers":[ 
+                    { 
+                        "color":"#757575"
+                    }
+                ]
+            },
+            { 
+                "featureType":"poi.park",
+                "elementType":"geometry",
+                "stylers":[ 
+                    { 
+                        "color":"#e5e5e5"
+                    }
+                ]
+            },
+            { 
+                "featureType":"poi.park",
+                "elementType":"labels.text.fill",
+                "stylers":[ 
+                    { 
+                        "color":"#9e9e9e"
+                    }
+                ]
+            },
+            { 
+                "featureType":"road",
+                "elementType":"geometry",
+                "stylers":[ 
+                    { 
+                        "color":"#ffffff"
+                    }
+                ]
+            },
+            { 
+                "featureType":"road.arterial",
+                "elementType":"labels.text.fill",
+                "stylers":[ 
+                    { 
+                        "color":"#757575"
+                    }
+                ]
+            },
+            { 
+                "featureType":"road.highway",
+                "elementType":"geometry",
+                "stylers":[ 
+                    { 
+                        "color":"#dadada"
+                    }
+                ]
+            },
+            { 
+                "featureType":"road.highway",
+                "elementType":"labels.text.fill",
+                "stylers":[ 
+                    { 
+                        "color":"#616161"
+                    }
+                ]
+            },
+            { 
+                "featureType":"road.local",
+                "elementType":"labels.text.fill",
+                "stylers":[ 
+                    { 
+                        "color":"#9e9e9e"
+                    }
+                ]
+            },
+            { 
+                "featureType":"transit.line",
+                "elementType":"geometry",
+                "stylers":[ 
+                    { 
+                        "color":"#e5e5e5"
+                    }
+                ]
+            },
+            { 
+                "featureType":"transit.station",
+                "elementType":"geometry",
+                "stylers":[ 
+                    { 
+                        "color":"#eeeeee"
+                    }
+                ]
+            },
+            { 
+                "featureType":"water",
+                "elementType":"geometry",
+                "stylers":[ 
+                    { 
+                        "color":"#c9c9c9"
+                    }
+                ]
+            },
+            { 
+                "featureType":"water",
+                "elementType":"labels.text.fill",
+                "stylers":[ 
+                    { 
+                        "color":"#9e9e9e"
+                    }
+                ]
+            }            
+        ],
+        {name: 'Styled Map'});
+        var center = {lat: 21.0231163,lng: 75.0006599};
+        var locations = [
+            ['Headquater<br>\
+            E-3/114 Arera Colony ,Bhopal<br>\
+            <a href="https://goo.gl/maps/RWR4DKmLvZEqGwSk6" target="_blank">Get Directions</a>',   23.2133502,77.434751, 'Headquater'],
+            ['Branch Office<br>\
+            ELITE-C ,Flat No 402 ,Lake Sore Green ,Palava, Navi Mumbai<br>\
+            <a href="https://goo.gl/maps/kptBRWxK61N8NDA76" target="_blank">Get Directions</a>', 19.1698002,73.1107537, 'Branch Office'],
+            ['Offshore Office <br>\
+            14203 SE 4 ST APT A BELLEVUE (WA, USA), 98007 <br>\
+            <a href="https://goo.gl/maps/MXRzwu2qcT2thTKNA" target="_blank">Get Directions</a>',47.6058846,-122.1528297, 'Offshore Office']
+          ];
+        
+            var map = new google.maps.Map(document.getElementById('map'), {
+            zoom:map_zoom,
+            center: center
+          });
+        var infowindow =  new google.maps.InfoWindow({});
+        var marker, count;
+        for (count = 0; count < locations.length; count++) {
+            marker = new google.maps.Marker({
+              position: new google.maps.LatLng(locations[count][1], locations[count][2]),
+              map: map,
+              icon : 'https://www.webodoctor.com/catalogs/assets/map-marker.png',
+              animation: google.maps.Animation.BOUNCE,
+              title: locations[count][3]
+            });
+            google.maps.event.addListener(marker, 'click', (function (marker, count) {
+                return function () {
+                    infowindow.setContent(locations[count][0]);
+                    infowindow.open(map, marker);
+                }
+            })(marker, count));
+        }
+        map.mapTypes.set('styled_map', styledMapType);
+        map.setMapTypeId('styled_map');
+    }
+</script>
+			<!---footer--->
+			<script >
+				$(window).scroll(function() {
+   				 if ($(window).scrollTop() > 100) {
+  			  navbar.classList.add("sticky")
+    				}
+    				else {
+   				 navbar.classList.remove("sticky");
+   					 }
+					});
+			</script>
+			
+			
+</body>
+</html
+
